@@ -25,26 +25,28 @@ function checkForWinner(){
     //horizontal case
     for(var i=1;i<=9;i+=3){
         if(obj[i].innerHTML=="-")
-            break;
+            continue;
         if(obj[i].innerHTML==obj[i+1].innerHTML && obj[i+1].innerHTML==obj[i+2].innerHTML){
             if(obj[i].innerHTML=="0")
                 document.getElementById("result").innerHTML=document.getElementById("p1").value + " is winner!!!Game Over";
             else
                 document.getElementById("result").innerHTML=document.getElementById("p2").value + " is winner!!!Game Over";
             isWin=1;
+            return;
         }
     }
 
     //vertical case
     for(var i=1;i<=3;i++){
         if(obj[i].innerHTML=="-")
-            break;
+            continue;
         if(obj[i].innerHTML==obj[i+3].innerHTML && obj[i+6].innerHTML==obj[i+3].innerHTML){
             if(obj[i].innerHTML=="0")
                 document.getElementById("result").innerHTML=document.getElementById("p1").value + " is winner!!! Game Over";
             else
                 document.getElementById("result").innerHTML=document.getElementById("p2").value + " is winner!!! Game Over";
             isWin=1;
+            return;
         }
     }
 
@@ -56,6 +58,7 @@ function checkForWinner(){
             else
                 document.getElementById("result").innerHTML=document.getElementById("p2").value + " is winner!!! Game Over";
             isWin=1;
+            return;
         }
     }
     if(obj[3].innerHTML!="-"){
@@ -65,6 +68,7 @@ function checkForWinner(){
             else
                 document.getElementById("result").innerHTML=document.getElementById("p2").value + " is winner!!! Game Over";
             isWin=1;
+            return;
         }
     }
 
