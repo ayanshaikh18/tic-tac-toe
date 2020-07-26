@@ -1,39 +1,27 @@
-body{
-    background-image: url(bg.jpg);
-}
-
 table{
     max-height: 300px;
     max-width: 300px;
     height: 300px;
     width: 300px;
-    margin-top: 100px;
-    margin-left: 450px;
+    margin-top: 150px;
+    margin-left: 400px;
     text-align: center;
 }
 
 .usrnm{
-    margin-left: 450px;
+    margin-left: 400px;
     margin-top: 70px;
 }
 
 .result{
     font-size: 25px;
-    color: white;
-    margin-left: 470px;
-}
-
-a:link{
-    color: white;
+    color: red;
+    margin-left: 450px;
 }
 
 .newGm{
-    margin-left: 530px;
+    margin-left: 500px;
     font-size: 18px;
-}
-
-label{
-    color: white;
 }
 
 td{
