@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel="stylesheet" type="text/css" href="tic-tac-toe.css" >
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="tic-tac-toe.js"></script>
     </head>
     <body>
-        <div class="usrnm">
-            <div class="form-group">
-                <div class="col-xs-2">
-                    <label for="usr">Player 1 :</label>
-                    <input type="text" class="form-control" id="p1" name="p2" required>
-                </div>
-                <div class="col-xs-2">
-                    <label for="usr">Player 2 :</label>
-                    <input type="text" class="form-control" id="p2" name="p2" required  >
-                </div>
+        <form>
+            <div class="usrnm">
+                <div class="form-group">
+                    <div class="col-xs-3">
+                        <label for="usr">Player 1 :</label>
+                        <input type="text" class="form-control" id="p1" name="p2" required>
+                    </div>
+                    <div class="col-xs-3">
+                        <label for="usr">Player 2 :</label>
+                        <input type="text" class="form-control" id="p2" name="p2" required  >
+                    </div>
+                </div><br>
+                <button type="button" class="btn btn-primary btn-lg">Start Game</button>
             </div>
-        </div>
-        <br>
+        </form>
         <table>
             <tr>
                 <td id="1" onclick="f(this.id)">-</td>

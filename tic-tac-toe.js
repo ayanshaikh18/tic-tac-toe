@@ -41,9 +41,9 @@ function checkForWinner(){
             break;
         if(obj[i].innerHTML==obj[i+3].innerHTML && obj[i+6].innerHTML==obj[i+3].innerHTML){
             if(obj[i].innerHTML=="0")
-                document.getElementById("result").innerHTML=document.getElementById("p1").value + " is winner!!!Game Over";
+                document.getElementById("result").innerHTML=document.getElementById("p1").value + " is winner!!! Game Over";
             else
-                document.getElementById("result").innerHTML=document.getElementById("p2").value + " is winner!!!Game Over";
+                document.getElementById("result").innerHTML=document.getElementById("p2").value + " is winner!!! Game Over";
             isWin=1;
         }
     }
@@ -52,18 +52,18 @@ function checkForWinner(){
     if(obj[1].innerHTML!="-"){
         if(obj[1].innerHTML==obj[5].innerHTML && obj[5].innerHTML==obj[9].innerHTML){
             if(obj[1].innerHTML=="0")
-                document.getElementById("result").innerHTML=document.getElementById("p1").value + " is winner!!!Game Over";
+                document.getElementById("result").innerHTML=document.getElementById("p1").value + " is winner!!! Game Over";
             else
-                document.getElementById("result").innerHTML=document.getElementById("p2").value + " is winner!!!Game Over";
+                document.getElementById("result").innerHTML=document.getElementById("p2").value + " is winner!!! Game Over";
             isWin=1;
         }
     }
     if(obj[3].innerHTML!="-"){
         if(obj[3].innerHTML==obj[5].innerHTML && obj[5].innerHTML==obj[7].innerHTML){
             if(obj[3].innerHTML=="0")
-                document.getElementById("result").innerHTML=document.getElementById("p1").value + " is winner";
+                document.getElementById("result").innerHTML=document.getElementById("p1").value + " is winner!!! Game Over";
             else
-                document.getElementById("result").innerHTML=document.getElementById("p2").value + " is winner";
+                document.getElementById("result").innerHTML=document.getElementById("p2").value + " is winner!!! Game Over";
             isWin=1;
         }
     }

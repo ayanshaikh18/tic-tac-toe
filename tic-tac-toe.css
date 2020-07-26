@@ -1,16 +1,19 @@
 table{
-    max-height: 300px;
-    max-width: 300px;
-    height: 300px;
-    width: 300px;
-    margin-top: 150px;
+    height: 400px;
+    width: 400px;
+    margin-top: 70px;
     margin-left: 400px;
     text-align: center;
+    font-size: 35px;
 }
 
 .usrnm{
-    margin-left: 400px;
+    margin-left: 300px;
     margin-top: 70px;
+}
+
+label{
+    font-size: 20px;
 }
 
 .result{
@@ -21,7 +24,7 @@ table{
 
 .newGm{
     margin-left: 500px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 td{
