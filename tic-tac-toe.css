@@ -1,0 +1,58 @@
+body{
+    background-image: url(bg.jpg);
+}
+
+table{
+    max-height: 300px;
+    max-width: 300px;
+    height: 300px;
+    width: 300px;
+    margin-top: 100px;
+    margin-left: 450px;
+    text-align: center;
+}
+
+.usrnm{
+    margin-left: 450px;
+    margin-top: 70px;
+}
+
+.result{
+    font-size: 25px;
+    color: white;
+    margin-left: 470px;
+}
+
+a:link{
+    color: white;
+}
+
+.newGm{
+    margin-left: 530px;
+    font-size: 18px;
+}
+
+label{
+    color: white;
+}
+
+td{
+    width: 100px;
+    height: 100px;
+}
+.ver{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.hor{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.ver-hor{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
