@@ -1,7 +1,37 @@
 var turn=0;
 var isWin=0;
+var gameOn=0;
+var val1
+var val2
+
+function get(name){
+    if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search))
+       return decodeURIComponent(name[1]);
+}
+
+function  restore() {
+    val1=get("p1");
+    val2=get("p2");
+    if(val1!=undefined && val2!=undefined){
+        document.getElementById("p1").value=val1;
+        document.getElementById("p2").value=val2;
+        gameOn=1
+    }
+    
+}
+function startGame(){
+    gameOn=1;
+    val1=document.getElementById("p1").value;
+    val2=document.getElementById("p2").value;
+    return true
+}
+
 function f(id){
-    if(document.getElementById(id).innerHTML!="-")
+    if(gameOn==0){
+        alert("Please enter names of players & click on start game!!!")
+        return false;
+    }
+    if(document.getElementById(id).innerHTML!="-" || gameOn==0)
         return;
     turn++;
     if(turn<=9 && isWin==0){
