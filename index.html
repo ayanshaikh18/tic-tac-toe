@@ -1,56 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="tic-tac-toe.css" >
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="tic-tac-toe.js"></script>
-    </head>
-    <body>
-        <br>
-        <div class="container">
-            <div class="row">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="tic-tac-toe.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="tic-tac-toe.js"></script>
+</head>
+
+<body>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h4 class="text-primary font-weight-bold">Tic Tac Toe</h4>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-sm-12">
                 <form onsubmit="startGame()" id="f1" action="#">
                     <div class="col-sm-8">
-                        <div class="form-group">
-                            <label for="p1">Player 1:</label>
-                            <input type="text" class="form-control" id="p1" name="p1" required="true">
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="p1">Player 1:</label>
+                                <input type="text" class="form-control" id="p1" name="p1" required="true">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="p2">Player 2:</label>
+                                <input type="text" class="form-control" id="p2" name="p2" required="true">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="p2">Player 2:</label>
-                            <input type="text" class="form-control" id="p2" name="p2" required="true">
-                        </div> 
                         <button type="submit" class="btn btn-success">Start a Game</button>
                     </div>
                 </form>
             </div>
-            <br>
-            <div class="row">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                    <table>
-                        <tr>
-                            <td id="1" onclick="f(this.id)">-</td>
-                            <td class="ver" id="2" onclick="f(this.id)">-</td>
-                            <td id="3" onclick="f(this.id)">-</td>
-                        </tr>
-                        <tr>
-                            <td class="hor" id="4" onclick="f(this.id)">-</td>
-                            <td class="ver-hor" id="5" onclick="f(this.id)">-</td>
-                            <td class="hor" id="6" onclick="f(this.id)">-</td>
-                        </tr>
-                        <tr>
-                            <td id="7" onclick="f(this.id)">-</td>
-                            <td class="ver" id="8" onclick="f(this.id)">-</td>
-                            <td id="9" onclick="f(this.id)">-</td>
-                        </tr>
-                    </table>
+        </div>
+        <br>
+        <div class="row text-center">
+            <div class="col-sm-6">
+                <div class="card bg-light" style="background-color: white !important;">
+                    <div class="card-body bg-light">
+                        <table>
+                            <tr>
+                                <td id="1" onclick="f(this.id)">-</td>
+                                <td class="ver" id="2" onclick="f(this.id)">-</td>
+                                <td id="3" onclick="f(this.id)">-</td>
+                            </tr>
+                            <tr>
+                                <td class="hor" id="4" onclick="f(this.id)">-</td>
+                                <td class="ver-hor" id="5" onclick="f(this.id)">-</td>
+                                <td class="hor" id="6" onclick="f(this.id)">-</td>
+                            </tr>
+                            <tr>
+                                <td id="7" onclick="f(this.id)">-</td>
+                                <td class="ver" id="8" onclick="f(this.id)">-</td>
+                                <td id="9" onclick="f(this.id)">-</td>
+                            </tr>
+                        </table>
                     </div>
-
                 </div>
-                
             </div>
-            <div  class="row">
-                
+        </div>
+        <div class="row mt-4">
+            <div class="col-sm-12">
                 <a href="index.html" style="font-size: 20px;">New Game</a>
                 <div class="panel panel-default">
                     <div id="result" class="panel-body">
@@ -58,7 +71,9 @@
                 </div>
             </div>
         </div>
-        <script>restore();</script>
-        
-    </body>
+    </div>
+    <script>restore();</script>
+
+</body>
+
 </html>
